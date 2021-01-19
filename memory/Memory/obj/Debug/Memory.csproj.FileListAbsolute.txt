@@ -1,0 +1,10 @@
+D:\programowanie\c# kś+\memory\Memory\bin\Debug\Memory.exe.config
+D:\programowanie\c# kś+\memory\Memory\bin\Debug\Memory.exe
+D:\programowanie\c# kś+\memory\Memory\bin\Debug\Memory.pdb
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.csprojAssemblyReference.cache
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.Form1.resources
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.Properties.Resources.resources
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.csproj.GenerateResource.cache
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.csproj.CoreCompileInputs.cache
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.exe
+D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.pdb

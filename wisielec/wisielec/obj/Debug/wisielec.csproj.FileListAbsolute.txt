@@ -1,0 +1,10 @@
+D:\programowanie\c# kś+\wisielec\wisielec\bin\Debug\wisielec.exe.config
+D:\programowanie\c# kś+\wisielec\wisielec\bin\Debug\wisielec.exe
+D:\programowanie\c# kś+\wisielec\wisielec\bin\Debug\wisielec.pdb
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.csprojAssemblyReference.cache
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.Form1.resources
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.Properties.Resources.resources
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.csproj.GenerateResource.cache
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.csproj.CoreCompileInputs.cache
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.exe
+D:\programowanie\c# kś+\wisielec\wisielec\obj\Debug\wisielec.pdb
