@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,11 +44,16 @@ namespace Memory
             random_button(Color.Purple);
             random_button(Color.Purple);
 
-            for(int i=1; i<17; i++)
-            {
-                covered[i] = true;
-            }
             set_button_color();
+
+            Task.Delay(2000).ContinueWith(_ =>
+            { 
+                for (int i = 1; i < 17; i++)
+                {
+                    covered[i] = true;
+                }
+                set_button_color();
+            });
         }
 
 
@@ -66,38 +72,48 @@ namespace Memory
             colors[button_number] = color;
         }
 
-        private void check()
+        private async void check()
         {
             counter++;
+
+            // jeśli para jest poprawna
             if (colors[first_button_number] == colors[second_button_number])
             {
-                MessageBox.Show("Gratulacje, znalazłeś parę!!!");
                 covered[first_button_number] = false;
                 covered[second_button_number] = false;
             }
             else
             {
-                MessageBox.Show("To nie te same kolory. Próbuj dalej.");
+                // ❌ zła para → pokazujemy przez 2 sekundy
+                await Task.Delay(500);
+
+                // zakrywamy z powrotem
+                covered[first_button_number] = true;
+                covered[second_button_number] = true;
+
+                set_button_color();
             }
 
+            set_button_color();
+
+            // sprawdzamy, czy gra skończona
             int uncovered = 0;
 
-            for(int u=1; u<17; u++)
+            for (int u = 1; u < 17; u++)
             {
-                if(covered[u] == false)
+                if (covered[u] == false)
                 {
                     uncovered++;
                 }
             }
 
-            if(uncovered == 16)
+            if (uncovered == 16)
             {
-                /*stop = Environment.TickCount & Int32.MaxValue;
-                roznica = stop - start;*/
-                MessageBox.Show("Wielkie gratulacje!!! Odnalazłeś wszystkie pary. Wykonałeś " +counter+ " ruchów/ruchy."/* Twój czas gry wyniósł: "+roznica+" sekund"*/);
+                MessageBox.Show("Wielkie gratulacje!!! Odnalazłeś wszystkie pary. Wykonałeś "
+                                + counter + " ruchów/ruchy.");
             }
-
         }
+
 
         private void set_button_color()
         {
@@ -135,7 +151,6 @@ namespace Memory
                     second_button_number = 1;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -155,7 +170,6 @@ namespace Memory
                     second_button_number = 2;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -175,7 +189,6 @@ namespace Memory
                     second_button_number = 3;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -195,7 +208,6 @@ namespace Memory
                     second_button_number = 4;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -215,7 +227,6 @@ namespace Memory
                     second_button_number = 5;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -235,7 +246,6 @@ namespace Memory
                     second_button_number = 6;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -255,7 +265,6 @@ namespace Memory
                     second_button_number = 7;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -275,7 +284,6 @@ namespace Memory
                     second_button_number = 8;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -295,7 +303,6 @@ namespace Memory
                     second_button_number = 9;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -315,7 +322,6 @@ namespace Memory
                     second_button_number = 10;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -335,7 +341,6 @@ namespace Memory
                     second_button_number = 11;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -355,7 +360,6 @@ namespace Memory
                     second_button_number = 12;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -375,7 +379,6 @@ namespace Memory
                     second_button_number = 13;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -395,7 +398,6 @@ namespace Memory
                     second_button_number = 14;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -415,7 +417,6 @@ namespace Memory
                     second_button_number = 15;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }
@@ -435,7 +436,6 @@ namespace Memory
                     second_button_number = 16;
                     first_click = true;
                     check();
-                    set_button_color();
                 }
             }
         }

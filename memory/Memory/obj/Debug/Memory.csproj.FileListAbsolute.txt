@@ -8,3 +8,17 @@ D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.csproj.GenerateResource.
 D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.csproj.CoreCompileInputs.cache
 D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.exe
 D:\programowanie\c# kś+\memory\Memory\obj\Debug\Memory.pdb
+C:\Users\User\Desktop\Memory\bin\Debug\Memory.exe.config
+C:\Users\User\Desktop\Memory\bin\Debug\Memory.exe
+C:\Users\User\Desktop\Memory\bin\Debug\Memory.pdb
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.Form1.resources
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.Properties.Resources.resources
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.exe
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.pdb
+C:\Users\User\Desktop\Memory\bin\Debug\Memory.exe.manifest
+C:\Users\User\Desktop\Memory\bin\Debug\Memory.application
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.exe.manifest
+C:\Users\User\Desktop\Memory\obj\Debug\Memory.application
